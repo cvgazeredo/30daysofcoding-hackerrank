@@ -30,7 +30,7 @@ if __name__ == '__main__':
             consecutive_ones += 1
             if consecutive_ones > max_number_consecutive_ones:
                 max_number_consecutive_ones = consecutive_ones
-        # Restart count
+        # Restart count of consecutive ones
         else:
             consecutive_ones = 0
 
