@@ -24,3 +24,4 @@ if __name__ == '__main__':
         # .. and greater than 20, print Not Weird
         elif N > 20 and N <= 100:
             print("Not Weird")
+            

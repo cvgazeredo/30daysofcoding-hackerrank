@@ -12,11 +12,12 @@ if __name__ == '__main__':
 
     arr = list(map(int, input().rstrip().split()))
 
-    # Reverse the array in place
+    # Reverse the array 
     arr.reverse()
 
-    # Print the reversed array elements as a single line
+    # Convert each integer element to string
     new_array = map(str, arr)
 
-    for i in new_array:
-        print(i + " ", end="")
+    # Print each element separated by space
+    for element in new_array:
+        print(element + " ", end="")
