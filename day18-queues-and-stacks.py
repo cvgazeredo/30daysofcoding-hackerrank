@@ -4,12 +4,13 @@ import sys
 # = pilha de pratos para lavar
 
 # queueu -> fila First in, First out
-# igual fila de banco
+# = fila de banco
 
 
 class Solution:
-    stack = []
-    queue = []
+    def __init__(self):
+        self.stack = []
+        self.queue = []
 
     # Push a character onto a stack - void
     def pushCharacter(self, stack):
