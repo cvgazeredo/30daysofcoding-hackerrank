@@ -13,23 +13,21 @@ class Solution:
         self.queue = []
 
     # Push a character onto a stack - void
-    def pushCharacter(self, stack):
-        self.stack.append(stack)
+    def pushCharacter(self, char):
+        self.stack.append(char)
 
     # Enqueue a character in queue variable - void
-    def enqueueCharacter(self, queue):
-        self.queue.append(queue)
+    def enqueueCharacter(self, char):
+        self.queue.append(char)
 
     # Pops and returns char at top of stack variable - return char
     def popCharacter(self):
-        stack = self.stack.pop(len(self.stack) - 1)
-        return stack
+        return self.stack.pop(len(self.stack) - 1)
 
     # Dequeue and return first char in queue variable - return char
     def dequeueCharacter(self):
-        if self.queue is not None:
-            queue = self.queue.pop(0)
-            return queue
+        if self.queue:
+            return self.queue.pop(0)
 
 
 # Read the string s
